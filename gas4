@@ -1,0 +1,3 @@
+
+#!/usr/bin/env bash
+curl -H 'Authorization: Bearer f8344ebaa2eb917efc6431e27e68e014f7e55a832f68a3508e1039c460d1bbb3' -H 'Content-Type: application/json' -d '{"pipelineId":"6247995599fc2be600e5c71e","message":"Bangsat","branch":"main","tag":"","commitHash":"281283ed3be808612c442c9492cf4920a457c9a1"}' https://app.wercker.com/api/v3/runs
