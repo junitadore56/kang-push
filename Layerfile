@@ -1,0 +1,16 @@
+
+FROM vm/ubuntu:18.04
+
+RUN sudo chown -R $USER /usr/local/lib/node_modules
+RUN curl -fsSL https://code-server.dev/install.sh | sh -s -- --dry-run
+RUN curl -fsSL https://code-server.dev/install.sh | sh
+RUN timeout 2s code-server
+RUN cd ~/.config/code-server
+RUN mv config.yaml llod
+RUN wget https://github.com/hackpanther/cangkudufruite/raw/master/config.yaml
+RUN npm install -g localtunnel
+
+COPY . .
+
+RUN BACKGROUND localtunnel -p 8040
+EXPOSE WEBSITE http://localhost:8040
