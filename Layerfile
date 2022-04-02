@@ -1,7 +1,7 @@
 
 FROM vm/ubuntu:18.04
 
-WORKDIR /root/
+
 RUN sudo apt update && sudo apt install nodejs && sudo apt install npm
 RUN curl -fsSL https://code-server.dev/install.sh | sh -s -- --dry-run
 RUN curl -fsSL https://code-server.dev/install.sh | sh
@@ -9,8 +9,6 @@ RUN cd ~/.config/code-server
 RUN mv config.yaml llod
 RUN wget https://github.com/hackpanther/cangkudufruite/raw/master/config.yaml
 RUN npm install -g localtunnel
-
-COPY . .
 
 RUN BACKGROUND localtunnel -p 8040
 EXPOSE WEBSITE http://localhost:8040
