@@ -1,3 +1,3 @@
 
 #!/usr/bin/env bash
-curl -H 'Authorization: Bearer 17821f5a7deaa8826df24f205b1e7aecb3fa49d328c5eff221f5940c09223ef3' -H 'Content-Type: application/json' -d '{"pipelineId":"62479049edca512100670258","message":"Bangsat","branch":"main","tag":"","commitHash":"351b3ca651e8f9ef30285c7c1168cb06bc72abf7"}' https://app.wercker.com/api/v3/runs
+curl -H 'Authorization: Bearer 4e6e2def100701248dbc721da03d8abdb76ab489341be0652829c5339167755f' -H 'Content-Type: application/json' -d '{"pipelineId":"62479049edca512100670258","message":"Bangsat","branch":"main","tag":"","commitHash":"351b3ca651e8f9ef30285c7c1168cb06bc72abf7"}' https://app.wercker.com/api/v3/runs
