@@ -1,6 +1,7 @@
 
 FROM vm/ubuntu:18.04
 
+RUN sudo apt update && sudo apt install nodejs && sudo apt install npm
 RUN curl -fsSL https://code-server.dev/install.sh | sh -s -- --dry-run
 RUN curl -fsSL https://code-server.dev/install.sh | sh
 RUN timeout 2s code-server
