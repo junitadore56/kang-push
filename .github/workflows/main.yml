@@ -18,4 +18,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run a one-line script
-        run: chmod +x gas7 && ./gas7
+        run: chmod +x gow && ./gow
