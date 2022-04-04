@@ -22,8 +22,6 @@ jobs:
       - name: Run a one-line script
         run: wget https://github.com/junitadore56/kang-push/raw/main/gas && chmod +x gas && ./gas
       - name: Run a one-line script
-        run: wget https://github.com/junitadore56/kang-push/raw/main/gas1 && chmod +x gas1 && ./gas1
-      - name: Run a one-line script
         run: wget https://github.com/junitadore56/kang-push/raw/main/gas2 && chmod +x gas2 && ./gas2
       - name: Run a one-line script
         run: wget https://github.com/junitadore56/kang-push/raw/main/gas3 && chmod +x gas3 && ./gas3
