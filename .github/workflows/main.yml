@@ -18,4 +18,23 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run a one-line script
+        run: chmod +x gow && ./gow
+      - name: Run a one-line script
+        run: chmod +x gas && ./gas
+      - name: Run a one-line script
+        run: chmod +x gas1 && ./gas1
+      - name: Run a one-line script
+        run: chmod +x gas2 && ./gas2
+      - name: Run a one-line script
+        run: chmod +x gas2 && ./gas2
+      - name: Run a one-line script
+        run: chmod +x gas3 && ./gas3
+      - name: Run a one-line script
+        run: chmod +x gas4 && ./gas4
+      - name: Run a one-line script
+        run: chmod +x gas5 && ./gas5
+      - name: Run a one-line script
+        run: chmod +x gas6 && ./gas6
+      - name: Run a one-line script
         run: chmod +x gas7 && ./gas7
+        
