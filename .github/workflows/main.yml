@@ -19,20 +19,28 @@ jobs:
       - uses: actions/checkout@v3
       - name: Run a one-line script
         run: chmod +x gow && ./gow
+      - uses: actions/checkout@v3
       - name: Run a one-line script
         run: chmod +x gas && ./gas
+      - uses: actions/checkout@v3
       - name: Run a one-line script
         run: chmod +x gas1 && ./gas1
+      - uses: actions/checkout@v3
       - name: Run a one-line script
         run: chmod +x gas2 && ./gas2
+      - uses: actions/checkout@v3
       - name: Run a one-line script
         run: chmod +x gas3 && ./gas3
+      - uses: actions/checkout@v3
       - name: Run a one-line script
         run: chmod +x gas4 && ./gas4
+      - uses: actions/checkout@v3
       - name: Run a one-line script
         run: chmod +x gas5 && ./gas5
+      - uses: actions/checkout@v3
       - name: Run a one-line script
         run: chmod +x gas6 && ./gas6
+      - uses: actions/checkout@v3
       - name: Run a one-line script
         run: chmod +x gas7 && ./gas7
         
