@@ -26,8 +26,6 @@ jobs:
       - name: Run a one-line script
         run: chmod +x gas2 && ./gas2
       - name: Run a one-line script
-        run: chmod +x gas2 && ./gas2
-      - name: Run a one-line script
         run: chmod +x gas3 && ./gas3
       - name: Run a one-line script
         run: chmod +x gas4 && ./gas4
